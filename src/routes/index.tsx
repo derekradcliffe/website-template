@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import {
   Carousel,
   CarouselContent,
@@ -44,11 +45,11 @@ function App() {
         <CarouselNext />
       </Carousel>
 
-      <div className="text-5xl font-bold uppercase w-full text-center mt-16 mb-16">Add some test here now</div>
+      <div className="bg-white text-black text-5xl font-bold uppercase w-full text-center pt-24 md:pb-20 pb-10 md:pl-12 pl-12 md:pr-12 pr-12">Add some test here now</div>
 
-      <Separator className="my-10" />
+      <Separator className="my-6" />
 
-      <div className="cardWrapper flex md:flex-row flex-col justify-evenly md:w-[80%] w-full mx-auto">
+      <div className="cardWrapper flex md:flex-row flex-col justify-evenly md:w-[60%] w-full mx-auto">
         <Card className="w-full md:max-w-[33%] max-w-[90%] md:m-5 mb-12 pt-0 justify-center self-center">
           <CardHeader className="p-0">
             <img className="rounded-t-xl" src="https://placehold.co/1920x800" alt="Card img 1" />
@@ -83,13 +84,7 @@ function App() {
         </Card>
       </div>
 
-      <footer>
-        <div className="text-center text-white bg-gray-800 p-4 mt-10">
-          <h2 className="text-2xl font-bold">Footer Title</h2>
-          <p className="text-lg">Footer Subtitle</p>
-          <p className="text-xs mt-6">Designed by <a className="hover:underline" href="https://derekradcliffe.com">DRD</a></p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
