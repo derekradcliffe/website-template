@@ -49,8 +49,7 @@ export default function contact() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+    // Setup email logic
     console.log(values);
   }
 
@@ -59,11 +58,11 @@ export default function contact() {
       <Header />
 
       <div className="flex flex-col justify-center items-center">
-        <div className="bg-gray-800 text-white text-5xl font-light w-full text-center pb-24 pt-24 mb-12">Reach out, we want to talk to you!</div>
+        <div className="bg-gray-800 text-white text-5xl font-light w-full text-center pb-24 pt-24 mb-12 mt-18">Reach out, we want to talk to you!</div>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 w-[50%] mx-auto"
+          className="space-y-8 md:w-[50%] w-[80%] mx-auto"
         >
           <div className="flex flex-col gap-4">
             <FormField

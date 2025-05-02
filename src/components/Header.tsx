@@ -12,9 +12,9 @@ import {
 
 export default function Header() {
   return (
-    <div className="flex flex-row bg-white w-full p-2 sticky top-0 z-5 shadow-md">
+    <div className="flex flex-row bg-white w-full p-2 fixed top-0 z-5 shadow-md">
       <div className="logo pl-3 justify-center self-center">
-        <img src="https://placehold.co/200x50" alt="Logo" className="top-0 left-0 z-5" />
+      <Link to="/"><img src="https://placehold.co/200x50" alt="Logo" className="top-0 left-0 z-5" /></Link>
         {/* <div className="textLogo">Your logo</div> */}
       </div>
         <NavigationMenu className="bg-white w-[100%] justify-end p-[0.5rem]">
