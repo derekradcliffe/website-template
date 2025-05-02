@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Header />
 
-      <img src="https://placehold.co/1920x800" alt="Image 1" />
+      <img className="w-full h-auto object-cover mt-16" src="https://placehold.co/1920x800" alt="Image 1" />
 
       <div className="wrapper">
         <div className="sectionOne w-[70%] flex flex-col justify-center items-center mx-auto">

@@ -18,6 +18,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { Button } from "@/components/ui/button";
+
 import { Separator } from "@/components/ui/separator";
 
 export const Route = createFileRoute("/")({
@@ -31,14 +33,15 @@ function App() {
 
       <Carousel>
         <CarouselContent>
-          <CarouselItem>
-            <img src="https://placehold.co/1920x800" alt="Image 1" />
+            <CarouselItem className="h-[100vh] w-[100%]">
+              <img src="https://placehold.co/1920x1080" alt="Image 1" className="w-full h-full object-cover" />
+            <Button className="md:absolute relative left-1/2 transform -translate-x-1/2 md:bottom-0 bottom-20 bg-black text-white hover:bg-gray-500 cursor-pointer md:mb-10 md:mt-0 mt-5 mb-0 md:w-[10%] w-[30%]">Button 1</Button>
+            </CarouselItem>
+          <CarouselItem className="h-[100vh] w-[100%]">
+            <img src="https://placehold.co/1920x1080" alt="Image 2" className="w-full h-full object-cover" />
           </CarouselItem>
-          <CarouselItem>
-            <img src="https://placehold.co/1920x800" alt="Image 2" />
-          </CarouselItem>
-          <CarouselItem>
-            <img src="https://placehold.co/1920x800" alt="Image 3" />
+          <CarouselItem className="h-[100vh] w-[100%]">
+            <img src="https://placehold.co/1920x1080" alt="Image 3" className="w-full h-full object-cover" />
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious />
@@ -49,7 +52,7 @@ function App() {
 
       <Separator className="my-6" />
 
-      <div className="cardWrapper flex md:flex-row flex-col justify-evenly md:w-[60%] w-full mx-auto">
+      <div className="cardWrapper flex md:flex-row flex-col justify-evenly md:w-[80%] w-full mx-auto">
         <Card className="w-full md:max-w-[33%] max-w-[90%] md:m-5 mb-12 pt-0 justify-center self-center">
           <CardHeader className="p-0">
             <img className="rounded-t-xl" src="https://placehold.co/1920x800" alt="Card img 1" />

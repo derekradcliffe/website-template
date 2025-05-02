@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="absolute w-full">
+    <footer className="flex flex-col w-full">
       <div className="text-center text-white bg-gray-800 p-4 mt-10">
         <h2 className="text-2xl font-bold">Footer Title</h2>
         <p className="text-lg">Footer Subtitle</p>
