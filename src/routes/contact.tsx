@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export const Route = createFileRoute("/contact")({
-  component: contact,
+  component: Contact,
 });
 
 const formSchema = z.object({
@@ -37,7 +37,7 @@ const formSchema = z.object({
   subject: z.string(),
 });
 
-export default function contact() {
+function Contact() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -132,3 +132,5 @@ export default function contact() {
     </>
   );
 }
+
+export default Contact

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/about")({
     component: About,
   });
 
-export default function About() {
+function About() {
   return (
     
     <>
@@ -32,3 +32,5 @@ export default function About() {
     </>
   );
 }
+
+export default About;
