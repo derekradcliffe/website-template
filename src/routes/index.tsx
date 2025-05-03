@@ -1,6 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import {
   Carousel,
   CarouselContent,
@@ -29,8 +27,6 @@ export const Route = createFileRoute("/")({
 function App() {
   return (
     <>
-      <Header />
-
       <Carousel>
         <CarouselContent>
             <CarouselItem className="h-[100vh] w-[100%]">
@@ -86,8 +82,6 @@ function App() {
           </CardContent>
         </Card>
       </div>
-
-      <Footer />
     </>
   );
 }

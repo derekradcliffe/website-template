@@ -4,8 +4,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -55,8 +53,6 @@ function Contact() {
 
   return (
     <>
-      <Header />
-
       <div className="flex flex-col justify-center items-center">
         <div className="bg-gray-800 text-white text-5xl font-light w-full text-center pb-24 pt-24 mb-12 mt-18">Reach out, we want to talk to you!</div>
       <Form {...form}>
@@ -127,8 +123,6 @@ function Contact() {
         </form>
       </Form>
       </div>
-
-      <Footer />
     </>
   );
 }
