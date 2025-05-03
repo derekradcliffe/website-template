@@ -4,7 +4,7 @@
   "homepage": "https://derekradcliffe.github.io/website-template",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "rimraf dist && npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite --port 3000",
     "start": "vite --port 3000",
@@ -44,6 +44,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "gh-pages": "^6.3.0",
     "jsdom": "^26.0.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.7.2",
     "vite": "^6.1.0",
     "vitest": "^3.0.5",
