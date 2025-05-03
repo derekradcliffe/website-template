@@ -1,6 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export const Route = createFileRoute("/about")({
     component: About,
@@ -10,8 +8,6 @@ function About() {
   return (
     
     <>
-      <Header />
-
       <img className="w-full h-auto object-cover mt-16" src="https://placehold.co/1920x800" alt="Image 1" />
 
       <div className="wrapper">
@@ -27,8 +23,6 @@ function About() {
             </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }
