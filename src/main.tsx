@@ -7,7 +7,7 @@ import './styles.css';
 // Create a new router instance
 const router = createRouter({
   routeTree,
-  // basepath: '/website-template', // Remove the for Netlify
+  basepath: '/website-template',
   context: {},
   defaultPreload: 'intent',
   scrollRestoration: true,
