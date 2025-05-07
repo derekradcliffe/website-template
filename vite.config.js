@@ -6,9 +6,9 @@ import { resolve } from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
+  // const env = loadEnv(mode, process.cwd(), '');
   return {
-    base: env.VITE_BASE_URL,
+    base: "/website-template",
     plugins: [
       TanStackRouterVite({ target: 'react', autoCodeSplitting: true }), 
       viteReact(), 
